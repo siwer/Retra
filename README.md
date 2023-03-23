@@ -20,3 +20,17 @@ The experimental settings are saved in the .sh files, which contain all the repo
 To log the data, the console output can be piped to a logfile by adding "|& tee -a logFile.txt" to the end of the lines (without quotation marks)
 
 To save the models, the saveModel Parameter must be set to true for the alle settings in the inits in trainer.py
+# Model training parameters
+As mentioned in our Paper (Section 6), we present the parameters that were used to achieve the results in the respective tasks. The presented durations include both training and testing. 
+ - Location Recommendation
+    - Adagrad optimizer, learning rate = 0.09, time needed ~ 12 - 14 hours (due to batchsize)
+    - Batchsize = 1, trained for 10 epochs, embedding dimension = 130, forward dimension = 130
+    - 1 encoder layer, 1 attention head
+ - Driving Scene Classification
+    - Adam optimizer, learning rate = 0.00005, time needed ~ 5 to 10 minutes
+    - Batchsize = 2048, trained for 100 epochs, embedding dimension = 50, forward dimension = 10
+    - 5 encoder layers, 5 attention heads
+ - Event Prediction
+    - Adam optimizer, learning rate = 0.008, time needed ~ 10 to 15 minutes
+    - Batchsize = 256, trained for 15 epochs, embedding dimension = 50, forward dimension = 50
+    - 1 encoder layer, 1 attention head

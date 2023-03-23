@@ -21,7 +21,7 @@ To log the data, the console output can be piped to a logfile by adding "|& tee 
 To save the models, the saveModel Parameter must be set to true for the alle settings in the inits in trainer.py
 
 # Model training parameters
-As mentioned in our Paper (Section 6), we present the parameters that were used to achieve the results in the respective tasks. The presented durations include both training and testing. 
+As mentioned in our Paper (Section 6), we present the parameters that were used to achieve the results in the respective tasks. The presented durations include both training and testing and were achieved on a V100 GPU at our institution. 
  - Location Recommendation
     - Adagrad optimizer, learning rate = 0.09, time needed ~ 12 - 14 hours (due to batchsize)
     - Batchsize = 1, trained for 10 epochs, embedding dimension = 130, forward dimension = 130

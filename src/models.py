@@ -5,7 +5,6 @@ To use different datasets, both the forward pass and the training/test/eval from
 '''
 import torch
 import torch.nn as nn
-import torch.optim as optim
 import holescore as hs
 
 #super class for initializing models for ICEWS and SUMO experiments

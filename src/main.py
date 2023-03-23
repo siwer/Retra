@@ -6,7 +6,6 @@ Settings from the paper are defined in the experiments*.sh files
 '''
 import models
 import trainer
-
 import argparse
 
 def get_parameter():

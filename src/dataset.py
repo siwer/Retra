@@ -4,7 +4,7 @@ Due to the custom RNN and how it is impelemented, the 'batch' option in the data
 The batchsize is provided within the datastructure
 '''
 import torch.multiprocessing
-from torch.utils.data import Dataset, DataLoader
+from torch.utils.data import Dataset
 import torch
 
 class retraDataset(Dataset):

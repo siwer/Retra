@@ -3,12 +3,10 @@ Provides the training, testing and evaluation protocoll for the different models
 Note that for the recurrent case, the batchsize is provided withing the dataset
 '''
 import torch
-import numpy as np
 import torch.nn as nn
 import torch.optim as optim
-from torch.utils.data import DataLoader
 import dataset as ds
-import models
+from torch.utils.data import DataLoader
 
 class TrainerInit:
     def __init__(self,trainData,validationData,testData,nrEpochs,learningRate,saveModel):

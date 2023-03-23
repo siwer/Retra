@@ -7,8 +7,7 @@ The raw data consists of three .nt files (test, rain and validation data) that c
 Due to restricted maximum file size on Github, the raw data is contained in a compressed archive.
 
 # Retra - Code for the experiments
-
-The spec-file.txt can be used to recreate the conda environment under which all experiments were conducted
+The spec-file.txt can be used to recreate the conda environment under which all experiments were conducted.
 
 All data is provided in preprocessed from:
 - put into the needed data structure
@@ -20,6 +19,7 @@ The experimental settings are saved in the .sh files, which contain all the repo
 To log the data, the console output can be piped to a logfile by adding "|& tee -a logFile.txt" to the end of the lines (without quotation marks)
 
 To save the models, the saveModel Parameter must be set to true for the alle settings in the inits in trainer.py
+
 # Model training parameters
 As mentioned in our Paper (Section 6), we present the parameters that were used to achieve the results in the respective tasks. The presented durations include both training and testing. 
  - Location Recommendation
@@ -34,3 +34,9 @@ As mentioned in our Paper (Section 6), we present the parameters that were used 
     - Adam optimizer, learning rate = 0.008, time needed ~ 10 to 15 minutes
     - Batchsize = 256, trained for 15 epochs, embedding dimension = 50, forward dimension = 50
     - 1 encoder layer, 1 attention head
+
+# Scoring functions
+The used scoring functions (TransE, SimplE and HolE) were adapted from 
+- SimplE: https://github.com/baharefatemi/SimplE/blob/master/SimplE.py
+- TransE: https://github.com/thunlp/OpenKE/blob/OpenKE-PyTorch/openke/module/model/TransE.py
+- HolE: https://github.com/thunlp/OpenKE/blob/OpenKE-PyTorch/openke/module/model/HolE.py
